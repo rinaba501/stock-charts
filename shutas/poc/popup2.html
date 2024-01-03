@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .container {
+      position: relative;
+      display: inline-block;
+    }
+    .popup {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      padding: 10px;
+      z-index: 1;
+    }
+    .container:hover .popup {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    マウスオーバーしてください
+    <div class="popup">
+      こんにちは！ポップアップです！
+    </div>
+  </div>
+</body>
+</html>
