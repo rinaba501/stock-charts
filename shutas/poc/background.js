@@ -31,8 +31,9 @@ function displayStockInfo(mySelectedWord) {
   div.style.left = "5px";
   div.style.width = "200px";
   div.style.height = "200px";
-  div.style.backgroundColor = "black";
-  div.style.color = "white";
+  div.style.backgroundColor = "navy";
+  div.style.color = "yellow";
   div.innerHTML = "Stock information to display -> " + mySelectedWord;
   document.body.appendChild(div);
+  setTimeout(() => {div.style.display = 'none';}, 5000);
 }
