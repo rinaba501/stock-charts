@@ -11,17 +11,20 @@ chrome.runtime.onInstalled.addListener(function (details) {
 chrome.contextMenus.onClicked.addListener((info, tab) => {
   switch (info.menuItemId) {
     case "displayStockInformation":
-      let word = info.selectionText;  // 選択文字列を取得する
+      console.log("Inside displayStockInformation switch");
+      let selectedWord = info.selectionText;  // 選択文字列を取得する
       chrome.scripting.executeScript({
         target: { tabId: tab.id },
         function: displayStockInfo,
+        args : [ selectedWord ]
       });
       break;
   }
 });
 
-function displayStockInfo() {
+function displayStockInfo(mySelectedWord) {
   //window.alert('testing🎉');
+  console.log("Inside function");
   var div = document.createElement("div");
   div.style.position = "fixed";
   div.style.top = "5px";
@@ -30,6 +33,6 @@ function displayStockInfo() {
   div.style.height = "200px";
   div.style.backgroundColor = "black";
   div.style.color = "white";
-  div.innerHTML = "Stock info goes here";
+  div.innerHTML = "Stock information to display -> " + mySelectedWord;
   document.body.appendChild(div);
 }
