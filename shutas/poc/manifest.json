@@ -11,8 +11,8 @@
       "activeTab", "scripting", "contextMenus", "tabs"
     ],
     "action": {
-        "default_popup": "popup.html"
-      },
+      "default_popup": "popup.html"
+    },
     "background": {
       "service_worker": "background.js"
     }  
