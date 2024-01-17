@@ -1,8 +1,8 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     margin: 20px;
     background-color: #f2f2f2;
-}
+} */
 
 .stock-info {
     border: 1px solid #ddd;
@@ -14,12 +14,12 @@ body {
     border-radius: 8px;
     overflow: hidden;
 }
-
+/* 
 h2 {
     margin-top: 0;
     font-size: 18px;
     color: #1a0dab;
-}
+} */
 
 .stock-data {
     display: flex;
@@ -33,3 +33,15 @@ h2 {
     font-weight: bold;
     color: #555;
 }
+
+.my-popup {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 500px;
+    height: 500px;
+    background-color: navy;
+    color: yellow;
+    overflow: auto; /* Add overflow property to enable scrolling if the content exceeds the div size */
+    padding: 20px; /* Add padding for better visual appearance */
+  }
