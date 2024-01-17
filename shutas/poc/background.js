@@ -31,43 +31,7 @@ function displayStockInfo(mySelectedWord) {
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <style>
-          body {
-              font-family: Arial, sans-serif;
-              margin: 20px;
-              background-color: #f2f2f2;
-          }
-
-          .stock-info {
-              border: 1px solid #ddd;
-              background-color: #fff;
-              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-              padding: 15px;
-              width: 300px;
-              margin: 0 auto;
-              border-radius: 8px;
-              overflow: hidden;
-          }
-
-          h2 {
-              margin-top: 0;
-              font-size: 18px;
-              color: #1a0dab;
-          }
-
-          .stock-data {
-              display: flex;
-              justify-content: space-between;
-              margin-top: 10px;
-              font-size: 14px;
-              color: #333;
-          }
-
-          .stock-label {
-              font-weight: bold;
-              color: #555;
-          }
-      </style>
+      <link rel="stylesheet" href="styles.css">
       <title>Stock Information</title>
   </head>
   <body>
@@ -86,6 +50,7 @@ function displayStockInfo(mySelectedWord) {
               <span class="stock-label">Change:</span>
               <span id="change">+2.50 (+1.5%)</span>
           </div>
+          <button id="myButton">Click me</button>
       </div>
 
       <!-- You can add JavaScript code here to fetch and update real-time stock data -->
