@@ -32,7 +32,7 @@ function displayStockInfo(mySelectedWord) {
   newDiv.style.right = "30px";
   newDiv.style.width = "500px";
   newDiv.style.height = "500px";
-  newDiv.style.backgroundColor = "rgba(173, 216, 230, 0.9)";
+  newDiv.style.backgroundColor = "rgba(15, 15, 30, 0.9)";
   newDiv.style.color = "yellow";
   newDiv.style.borderRadius = "40px"; 
   newDiv.style.zIndex = "9999";
